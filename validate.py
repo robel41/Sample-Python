@@ -17,8 +17,8 @@ else:
 
 ##############
 #useing import re
-
-if re.search(r"^.+@.+\.edu$", email):# see . * + ^  $ ... meaning ($ - end of string) (^ meaning start with)
-        print("Valid")
+# see . * + ^  $ ... meaning ($ - end of string) (^ meaning start with) (^[^@] enything expet @)
+if re.search(r"^[^@]+@[^@]+\.edu$", email):
+    print("Valid")
 else:
     print("Invalid")
