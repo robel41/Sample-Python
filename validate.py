@@ -8,18 +8,21 @@ else:
     print("Invalid")"""
 #############################
 
-"""userName, domain = email.split("@")
+userName, domain = email.split("@")
 
 if userName and "." in domain and domain.endswith(".edu"):
     print("Valid")
 else:
-    print("Invalid")"""
+    print("Invalid")
 
 ##############
+""" 
 #useing import re
 # see . * + ^  $ ... meaning ($ - end of string) (^ meaning start with) (^[^@] enything expet @)
 # ^[a-zA-Z0-9_] == ^\w    -> ^\W is the opposite of \w
+
 if re.search(r"^\w+@[a-zA-Z0-9_]+\.edu$", email, re.IGNORECASE):
     print("Valid")
 else:
     print("Invalid")
+    """
