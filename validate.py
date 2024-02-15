@@ -16,13 +16,13 @@ else:
     print("Invalid")
 
 ##############
-""" 
+
 #useing import re
 # see . * + ^  $ ... meaning ($ - end of string) (^ meaning start with) (^[^@] enything expet @)
 # ^[a-zA-Z0-9_] == ^\w    -> ^\W is the opposite of \w
 
-if re.search(r"^\w+@[a-zA-Z0-9_]+\.edu$", email, re.IGNORECASE):
+if re.search(r"^\w+@[a-zA-Z0-9_]+\.com$", email, re.IGNORECASE):
     print("Valid")
 else:
     print("Invalid")
-    """
+    
